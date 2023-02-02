@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/E-Commerce/static/css/main.bb805118.css",
+    "main.css": "/E-Commerce/static/css/main.181b9418.css",
     "main.js": "/E-Commerce/static/js/main.cff600a0.js",
     "static/js/787.62ac06b3.chunk.js": "/E-Commerce/static/js/787.62ac06b3.chunk.js",
     "static/media/bg-2.png": "/E-Commerce/static/media/bg-2.f9bde4b23e769ecfd681.png",
@@ -21,12 +21,12 @@
     "static/media/poco-logo-new.png": "/E-Commerce/static/media/poco-logo-new.a0f483ac9db770dcbeed.png",
     "static/media/lenovo-logo-red.webp": "/E-Commerce/static/media/lenovo-logo-red.59ddd3a13f7685428fa4.webp",
     "index.html": "/E-Commerce/index.html",
-    "main.bb805118.css.map": "/E-Commerce/static/css/main.bb805118.css.map",
+    "main.181b9418.css.map": "/E-Commerce/static/css/main.181b9418.css.map",
     "main.cff600a0.js.map": "/E-Commerce/static/js/main.cff600a0.js.map",
     "787.62ac06b3.chunk.js.map": "/E-Commerce/static/js/787.62ac06b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb805118.css",
+    "static/css/main.181b9418.css",
     "static/js/main.cff600a0.js"
   ]
 }
