@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 import './App.css';
+import {BrowserRouter , Routes , Route} from 'react-router-dom'
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Home from "./Pages/Home";
+import Mobile from "./Pages/Mobile";
+import Tablet from "./Pages/Tablet";
+import Accessories from "./Pages/Accessories";
+import Scroll from "./Components/Scroll";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mobile" element={<Mobile />} />
+          <Route path="/tablet" element={<Tablet />} />
+          <Route path="/accessories" element={<Accessories />} />
+          <Route path="/log-in" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+        <Scroll />
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
