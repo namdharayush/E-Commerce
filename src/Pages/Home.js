@@ -75,7 +75,7 @@ const Home = () => {
       <section className="banner">
         <Swiper
           navigation={true}
-          // autoplay={{ delay: 4000, disableOnInteraction: false }}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
           modules={[Autoplay, Navigation]}
           className="mySwiper"
         >

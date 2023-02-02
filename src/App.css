@@ -292,8 +292,8 @@ p {
   float: right;
   width: 53%;
   object-fit: cover;
-}
-.home_mobiles .col-6 .img-2 {
+} */
+/* .home_mobiles .col-6 .img-2 {
   float: right;
   width: 29%;
   object-fit: cover;
@@ -623,7 +623,11 @@ p {
 
   .mobiles_section .home_mobiles .custom_container {
     padding: 50px 30px;
-    margin-top: -98px;
+  }
+  .mobiles_section{
+    position: relative;
+    top: -101px;
+    z-index: 1;
   }
   .mobiles_section .home_mobiles h4,
   .mobiles_section .home_mobiles p {
