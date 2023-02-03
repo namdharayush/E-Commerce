@@ -75,8 +75,11 @@ const Home = () => {
       <section className="banner">
         <Swiper
           navigation={true}
+          freeMode = {true}
+          loop = {true}
+          rewind={true}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
-          modules={[Autoplay, Navigation]}
+          modules={[Autoplay, Navigation , FreeMode]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -207,7 +210,7 @@ const Home = () => {
                   <h2 className="mb-3">Galexy Z Flip4 </h2>
                   <p className="mb-3">
                     Starting{" "}
-                    <FontAwesomeIcon
+                    <FontAwesomeIcon className="rupess_icon"
                       style={{ fontSize: "14px" }}
                       icon={faIndianRupeeSign}
                     />
@@ -252,7 +255,7 @@ const Home = () => {
                   <h2 className="mb-3">Xiaomi 12 Pro</h2>
                   <p className="mb-3">
                     Starting{" "}
-                    <FontAwesomeIcon
+                    <FontAwesomeIcon className="rupess_icon"
                       style={{ fontSize: "14px" }}
                       icon={faIndianRupeeSign}
                     />
@@ -297,7 +300,7 @@ const Home = () => {
                   <h2 className="mb-3">OnePlus 10 Pro 5G</h2>
                   <p className="mb-3">
                     Starting{" "}
-                    <FontAwesomeIcon
+                    <FontAwesomeIcon className="rupess_icon"
                       style={{ fontSize: "14px" }}
                       icon={faIndianRupeeSign}
                     />
@@ -342,7 +345,7 @@ const Home = () => {
                   <h2 className="mb-3">realme 10</h2>
                   <p className="mb-3">
                     Starting{" "}
-                    <FontAwesomeIcon
+                    <FontAwesomeIcon className="rupess_icon"
                       style={{ fontSize: "14px" }}
                       icon={faIndianRupeeSign}
                     />
@@ -389,7 +392,7 @@ const Home = () => {
                   <h2 className="mb-3">POCO F4 5G</h2>
                   <p className="mb-3">
                     Starting{" "}
-                    <FontAwesomeIcon
+                    <FontAwesomeIcon className="rupess_icon"
                       style={{ fontSize: "14px" }}
                       icon={faIndianRupeeSign}
                     />

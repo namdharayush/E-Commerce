@@ -102,15 +102,16 @@ p {
   justify-content: space-between;
 }
 
+.footer .contact-icons {
+  display: flex;
+}
 /* Footer End */
 
 /* Banner Start */
 
 .swiper-slide {
-  text-align: center;
   font-size: 18px;
 }
-
 .main-banner {
   color: var(--color-white);
   background-color: var(--color-black);
@@ -292,8 +293,8 @@ p {
   float: right;
   width: 53%;
   object-fit: cover;
-} */
-/* .home_mobiles .col-6 .img-2 {
+}
+.home_mobiles .col-6 .img-2 {
   float: right;
   width: 29%;
   object-fit: cover;
@@ -528,6 +529,7 @@ p {
   .mobiles_section .home_mobiles h2 {
     font-size: 28px;
   }
+  
 }
 
 @media (max-width: 767.98px) {
@@ -578,11 +580,32 @@ p {
   .mobiles_section .home_mobiles h2 {
     font-size: 24px;
   }
+  .swiper-slide {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .footer h3{
+    font-size:15px !important;
+  }
+  .footer h4{
+    font-size:13px !important;
+  }
+  .footer p{
+    font-size:11px !important;
+  }
+  .footer  .navlink{
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 575.98px) {
+  .swiper-slide {
+    font-size: 18px;
+    text-align: center;
+  }
   .main-banner {
-    height: 70vh;
+    height:70vh;
   }
   .main-banner .banner-1 {
     width: 30%;
@@ -594,6 +617,10 @@ p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+  }
+  .mobiles_section{
+    position: relative;
+    z-index: 1;
   }
   .main-banner-2 .banner-3 {
     width: 100%;
@@ -613,7 +640,6 @@ p {
     display: flex;
     padding-top: 50px;
     align-items: flex-start;
-    padding-top: -20px;
   }
   .swiper-button-next , 
   .swiper-button-prev{
@@ -623,11 +649,7 @@ p {
 
   .mobiles_section .home_mobiles .custom_container {
     padding: 50px 30px;
-  }
-  .mobiles_section{
-    position: relative;
-    top: -101px;
-    z-index: 1;
+    margin-top: -98px;
   }
   .mobiles_section .home_mobiles h4,
   .mobiles_section .home_mobiles p {
@@ -635,6 +657,9 @@ p {
   }
   .mobiles_section .home_mobiles h2 {
     font-size: 20px;
+  }
+  .mobiles_section .rupess_icon{
+    font-size: 10px !important;
   }
 
   .mobile_brands {
@@ -663,6 +688,19 @@ p {
   }
   .mobile_brands .poco {
     width: 55%;
+  }
+
+  .footer h3{
+    font-size:14px !important;
+  }
+  .footer h4{
+    font-size:13px !important;
+  }
+  .footer p{
+    font-size:11px !important;
+  }
+  .footer  .navlink{
+    font-size: 10px;
   }
 }
 

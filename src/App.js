@@ -12,6 +12,8 @@ import Scroll from "./Components/Scroll";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 
+
+
 function App() {
   return (
     <>
