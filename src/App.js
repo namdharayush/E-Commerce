@@ -11,13 +11,14 @@ import Accessories from "./Pages/Accessories";
 import Scroll from "./Components/Scroll";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import SingleProduct from "./Pages/SingleProduct";
 
 
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/E-Commerce">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +26,7 @@ function App() {
           <Route path="/tablet" element={<Tablet />} />
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/log-in" element={<Login />} />
+          <Route path="/singleproduct/:id" element={<SingleProduct />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<Home />} />
         </Routes>

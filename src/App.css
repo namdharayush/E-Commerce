@@ -463,6 +463,52 @@ p {
 
 /* Mobiles Section End */
 
+
+
+/* Filter Section End */
+
+  .filter_product .brands-name-checkbox div{
+    margin-top: -10px;
+  }
+  .filter_product{
+    position: sticky;
+    top: 0;
+  }
+
+/* Filter Section End */
+
+
+
+/* Mobile Page Start */
+
+
+.mobile_page .custom-row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.mobile_page img{
+  width: 100%;
+}
+.mobile_page h4{
+  font-size: 16px;
+}
+.mobile_page h6{
+  font-weight: 400;
+}
+.mobile_page h5{
+  font-size: 16px;
+  color: rgb(0, 76, 255);
+}
+
+
+
+
+/* Mobile Page End */
+
+
+
+
 /* Responsive Start */
 
 @media (max-width: 991.98px) {
