@@ -1071,6 +1071,7 @@ p {
   .footer-bottom .copyright{
     position: relative;
     left:50%;
+    transform: translateX(-50%) !important;
   }
 }
 
