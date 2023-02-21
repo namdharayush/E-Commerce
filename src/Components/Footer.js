@@ -16,10 +16,10 @@ import {
 const Footer = () => {
   return (
     <>
-      <section className="footer">
-        <div className="container">
+      <footer className="footer">
+        <div className="container-md">
           <div className="row">
-            <div className="col-4">
+            <div className="col-4 ">
               <div className="custom-col">
               <h3>Contact US</h3>
               <div>
@@ -29,19 +29,19 @@ const Footer = () => {
                 <p>store@Contact</p>
               </div>
               <div className="contact-icons">
-                <FontAwesomeIcon
+                <FontAwesomeIcon className="icons"
                   style={{ marginRight: "10px", fontSize: "20px" }}
                   icon={faInstagram}
                 />
-                <FontAwesomeIcon
+                <FontAwesomeIcon className="icons"
                   style={{ marginRight: "10px", fontSize: "20px" }}
                   icon={faFacebook}
                 />
-                <FontAwesomeIcon
+                <FontAwesomeIcon className="icons"
                   style={{ marginRight: "10px", fontSize: "20px" }}
                   icon={faTwitter}
                 />
-                <FontAwesomeIcon
+                <FontAwesomeIcon className="icons"
                   style={{ marginRight: "10px", fontSize: "20px" }}
                   icon={faYoutube}
                 />
@@ -116,7 +116,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
+      </footer>
     </>
   );
 };

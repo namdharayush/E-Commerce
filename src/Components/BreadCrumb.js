@@ -5,9 +5,10 @@ import { NavLink } from 'react-router-dom';
 const BreadCrumb = (props) => {
     return (
         <>
-            <div >
+            <div className='breadcrumb' >
                 <NavLink style={{color:"red" , textDecoration :"none"}} to="/">Home &gt; </NavLink>
                 <NavLink style={{color:"red" , textDecoration :"none"}} to={props.to}>{props.name}</NavLink>
+                <NavLink style={{color:"red" , textDecoration :"none"}} to={`/singleproduct/${props.id}/${props.productName}`}> &gt; {props.productName}</NavLink>
             </div>
         </>
     );

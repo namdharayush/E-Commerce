@@ -11,8 +11,9 @@ import Accessories from "./Pages/Accessories";
 import Scroll from "./Components/Scroll";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
-import SingleProduct from "./Pages/SingleProduct";
-
+import SingleProduct from "./Components/SingleProduct";
+import CompareProduct from "./Pages/CompareProduct";
+import Cart from "./Pages/Cart";
 
 
 function App() {
@@ -26,9 +27,11 @@ function App() {
           <Route path="/tablet" element={<Tablet />} />
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/log-in" element={<Login />} />
-          <Route path="/singleproduct/:id" element={<SingleProduct />} />
+          <Route path="/singleproduct/:id/:mobilename" element={<SingleProduct />} />
+          <Route path="/compareproduct" element={<CompareProduct />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<Home />} />
+          <Route path="/cart" element={<Cart />}/>
         </Routes>
         <Scroll />
         <Footer />

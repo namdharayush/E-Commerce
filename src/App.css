@@ -6,6 +6,7 @@
   --color-black: black;
 }
 
+
 .scroll {
   position: fixed;
   bottom: 50px;
@@ -51,7 +52,9 @@
   margin-left: 10px;
   font-weight: 500;
 }
-
+.top-header .com-product h3{
+  text-decoration: none !important;
+}
 .top-header .navbar {
   display: none;
 }
@@ -63,13 +66,87 @@
   width: 500px !important;
   transition: all 0.5s ease-out;
 }
+.top-header .add-to-cart{
+  position: relative;
+}
+.top-header .add-to-cart-amount{
+  background-color: rgb(54, 3, 255);
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  padding: 3px 7px;
+  position: absolute;
+  top: -10px;
+  right: -8px;
+}
+.top-header .login_media{
+  display: none;
+}
+
+
+
+
+
+
+
 
 /* heading 1 End */
 
-/* Footer start */
 
+
+/* Compare Products Start */
+
+.compare_products .btn{
+  margin:20px 0;
+  width: 100%;
+}
+.compare_products input{
+  margin:20px 0 ;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  border:none;
+  position: relative;
+  border-radius: 10px;
+}
+.compare_products input:focus{
+  box-shadow: 0px 0px 4px 0px rgba(255,255,255);
+  outline: none;
+}
+.compare_products input::placeholder{
+  color: rgba(255, 255, 255, 0.779);
+}
+.compare_products .faicons{
+  color: red;
+  position: absolute;
+  top:20.5%;
+  font-size: 20px;
+  left: 40.4%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.compare_products .faiconsSecond{
+  color: red;
+  position: absolute;
+  top:20.5%;
+  font-size: 20px;
+  right: 15.9%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* Compare Products End */
+
+
+
+
+
+/* Footer start */
 .footer {
   padding: 40px 0;
+  width: 100%;
   background-color: #232f3e;
   color: white;
 }
@@ -474,6 +551,9 @@ p {
     position: sticky;
     top: 0;
   }
+  .filter_product .price_range{
+    width: 170px;
+  }
 
 /* Filter Section End */
 
@@ -508,6 +588,35 @@ p {
 
 
 
+.single_product .custom-row{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/* Cart Page Start */
+
+
+.cart-page{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr 0fr;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cart-page p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.cart-page img{
+  width: 30%;
+}
+
+/* Cart Page End */
+
+
+
 
 /* Responsive Start */
 
@@ -538,13 +647,18 @@ p {
     width: 300px;
     box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.358);
     left: 0;
-    height: 100vh;
     padding: 20px;
+  }
+  .top-header .navbar-nav{
+    height: 100vh;
   }
   .top-header .navbar {
     display: block;
     background-color: white !important;
     float: left;
+  }
+  .top-header .login_media{
+    display: block;
   }
 
   .main-banner .banner-text h3 {
@@ -575,15 +689,87 @@ p {
   .mobiles_section .home_mobiles h2 {
     font-size: 28px;
   }
+
+  .mobiles_section .col-6 img{
+    width: 100%;
+  }
+  .mobiles_section .col-6 .img{
+    width: 90%;
+    height:300px;
+    object-fit: contain;
+  }
+  .mobiles_section .col-6 .img-1{
+    width: 90%;
+    height:300px;
+    object-fit: contain;
+  }
+
+  .mobile_page{
+    padding: 10px 20px;
+  }
+  .mobile_page .custom-row{
+    grid-template-columns: 4fr 4fr 4fr !important;
+  }
+
+
+  .filter_product h3{
+    font-size: 21px;
+  }
+  .filter_product .price_range{
+    width: 120px;
+  }
+
+
+  .login{
+    min-width: 50%;
+  }
+
+
+  .compare_products input{
+    margin:20px 0 ;
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+  }
+  .compare_products .btn{
+    margin:20px 0;
+    width:100%;
+  }
+  .compare_products input::placeholder{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.385);
+  }
+  .compare_products .faicons{
+    position: absolute;
+    top:15.9%;
+    left: 30.0%;
+  }
+  .compare_products .faiconsSecond{
+    position: absolute;
+    top:15.9%;
+    right: 18.9%;
+  }
+
+  
+  
   
 }
 
 @media (max-width: 767.98px) {
+  .main-banner{
+    height: 87vh;
+  }
+  .main-banner-2{
+    height: 87vh;
+  }
+  .main-banner-3{
+    height: 87vh;
+  }
   .main-banner .banner-1 {
     width: 50%;
     height: 10%;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
   }
   .main-banner .banner-2 {
     width: 30%;
@@ -626,6 +812,12 @@ p {
   .mobiles_section .home_mobiles h2 {
     font-size: 24px;
   }
+  .mobiles_section .home_mobiles{
+    padding: 20px 30px;
+  }
+  .mobile_brands{
+    padding: 20px;
+  }
   .swiper-slide {
     font-size: 18px;
     text-align: center;
@@ -643,6 +835,62 @@ p {
   .footer  .navlink{
     font-size: 10px;
   }
+
+  .filter_product h3{
+    font-size: 18px;
+  }
+  .filter_product .price_range{
+    width: 90px;
+  }
+  .filter_product .css-ahj2mt-MuiTypography-root{
+    font-size: 16px;
+  }
+
+
+  .mobile_page .custom-row{
+    grid-template-columns: 4fr 4fr !important;
+  }
+  .mobile_page h4{
+    font-size: 20px !important;
+  }
+  .mobile_page li{
+    font-size: 16px !important;
+  }
+
+  .single_product h3{
+    font-size: 20px !important;
+  }
+  .single_product h5{
+    font-size: 18px !important;
+  }
+  .single_product h4{
+    font-size: 18px !important;
+  }
+  .single_product td{
+    font-size: 14px;
+  }
+  .single_product .single_product_add{
+    display: none;
+  }
+  .single_product{
+    padding:0 20px;
+  }
+  .single_product img{
+    width: 100% !important;
+  }
+
+  .compare_products .faicons{
+    position: absolute;
+    top:16.3%;
+    left: 29.0%;
+  }
+  .compare_products .faiconsSecond{
+    position: absolute;
+    top:16.3%;
+    right: 19.3%;
+  }
+
+
 }
 
 @media (max-width: 575.98px) {
@@ -689,13 +937,30 @@ p {
   }
   .swiper-button-next , 
   .swiper-button-prev{
-    top: 50%;
-    transform: translateY(-100%);
+    display: none !important;
+  }
+  .breadcrumb{
+    display: none;
+  }
+  .search-input{
+    width:100%;
+    position: relative;
+    left:-35px;
+  }
+  .single_product img{
+    margin-top: -90px !important;
+  }
+  .single_product h3{
+    margin-top: -50px !important;
   }
 
+  
+
+  .home_mobiles{
+    margin-top: -145px;
+  }
   .mobiles_section .home_mobiles .custom_container {
-    padding: 50px 30px;
-    margin-top: -98px;
+    padding: 30px 10px 0;
   }
   .mobiles_section .home_mobiles h4,
   .mobiles_section .home_mobiles p {
@@ -712,29 +977,48 @@ p {
     padding: 50px 30px;
   }
   .mobile_brands .apple {
-    width: 40%;
+    width: 15%;
   }
   .mobile_brands .samsung {
-    width: 90%;
+    width: 60%;
   }
   .mobile_brands .oneplus {
-    width: 90%;
+    width:60%;
   }
   .mobile_brands .realme {
-    width: 70%;
+    width: 40%;
   }
   .mobile_brands .mi {
-    width: 30%;
+    width: 20%;
   }
   .mobile_brands .lenovo {
-    width: 70%;
+    width: 40%;
   }
   .mobile_brands .asus {
-    width: 75%;
+    width: 45%;
   }
   .mobile_brands .poco {
-    width: 55%;
+    width: 45%;
   }
+  .mobile_brands .sam:hover .ani {
+    animation: none;
+  }
+  .filter_product{
+    display: none;
+  }
+  .mobile_page .custom-row{
+    grid-template-columns: 4fr !important;
+  }
+  .mobile_page img{
+    width: 80% !important;
+    margin-bottom: 20px;
+  }
+  .grid_view_section{
+    display: none;
+  }
+
+
+
 
   .footer h3{
     font-size:14px !important;
@@ -747,6 +1031,46 @@ p {
   }
   .footer  .navlink{
     font-size: 10px;
+  }
+  .compare_products .faicons{
+    position: absolute;
+    top:16.3%;
+    left:90%;
+  }
+  .compare_products .faiconsSecond{
+    position: absolute;
+    top:40.5%;
+    right:7%;
+  }
+
+
+  .login{
+    width: 80% !important;
+  }
+  .login label{
+    font-size: 13px !important;
+  }
+  .login h6{
+    font-size: 13px !important;
+  }
+
+
+
+}
+
+@media (max-width:400px) {
+  .footer h3{
+    font-size: 8px !important;
+  }
+  .footer .contact-icons .icons{
+    font-size: 12px !important;
+  }
+  .footer-bottom .footer-icons{
+    display: none;
+  }
+  .footer-bottom .copyright{
+    position: relative;
+    left:50%;
   }
 }
 

@@ -39,7 +39,7 @@ const Login = () => {
   return (
     <>
       <section className="pt-5 pb-5">
-        <div className="container">
+        <div className="container-md">
           <div className="login">
             <form action="#" method="POST" onSubmit={(e) => e.preventDefault()}>
               <div className="user">

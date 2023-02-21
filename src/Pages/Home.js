@@ -78,7 +78,7 @@ const Home = () => {
           freeMode = {true}
           loop = {true}
           rewind={true}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          // autoplay={{ delay: 4000, disableOnInteraction: false }}
           modules={[Autoplay, Navigation , FreeMode]}
           className="mySwiper"
         >
@@ -189,7 +189,7 @@ const Home = () => {
             display: isActive1 ? "block" : "none",
           }}
         >
-          <div className="container custom_container">
+          <div className="container-md custom_container">
             <div className="nav-mobiles">
               <h4
                 style={{
@@ -234,7 +234,7 @@ const Home = () => {
             display: isActive2 ? "block" : "none",
           }}
         >
-          <div className="container custom_container">
+          <div className="container-md custom_container">
             <div className="nav-mobiles">
               <h4 onClick={Samsung}>Galexy Z Flip4</h4>
               <h4
@@ -279,7 +279,7 @@ const Home = () => {
             display: isActive3 ? "block" : "none",
           }}
         >
-          <div className="container custom_container">
+          <div className="container-md custom_container">
             <div className="nav-mobiles">
               <h4 onClick={Samsung}>Galexy Z Flip4</h4>
               <h4 onClick={redmi}>Xiaomi 12 Pro</h4>
@@ -324,7 +324,7 @@ const Home = () => {
             display: isActive4 ? "block" : "none",
           }}
         >
-          <div className="container custom_container">
+          <div className="container-md custom_container">
             <div className="nav-mobiles text-white">
               <h4 onClick={Samsung}>Galexy Z Flip4</h4>
               <h4 onClick={redmi}>Xiaomi 12 Pro</h4>
@@ -371,7 +371,7 @@ const Home = () => {
             display: isActive5 ? "block" : "none",
           }}
         >
-          <div className="container custom_container">
+          <div className="container-md custom_container">
             <div className="nav-mobiles text-white">
               <h4 onClick={Samsung}>Galexy Z Flip4</h4>
               <h4 onClick={redmi}>Xiaomi 12 Pro</h4>
@@ -414,7 +414,7 @@ const Home = () => {
         </section>
       </section>
       <section className="mobile_brands pt-5 pb-5 bg-white">
-        <div className="container custom_container">
+        <div className="container-md custom_container">
           <Swiper
             modules={[Navigation, Autoplay, FreeMode, EffectCoverflow]}
             centeredSlides={true}
@@ -424,10 +424,10 @@ const Home = () => {
             className="mySwiper"
             freeMode={true}
             breakpoints={{
-              575 : {
+              576 : {
                 slidesPerView : 3
               },
-              767 : {
+              768 : {
                 slidesPerView : 5
               }
 

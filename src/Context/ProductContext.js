@@ -11,7 +11,7 @@ const initialState = {
   isError: false,
   products: [],
   isSingleLoading: false,
-  singleProduct:{},
+  singleProduct: [{}],
 };
 
 const AppProvider = ({ children }) => {
@@ -45,7 +45,9 @@ const AppProvider = ({ children }) => {
     getProducts(API);
   }, []);
   return (
-    <AppContext.Provider value={{ ...state , getSingleProduct}}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ ...state, getSingleProduct }}>
+      {children}
+    </AppContext.Provider>
   );
 };
 const useProductContext = () => {
